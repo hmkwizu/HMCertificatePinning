@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>HMCertificatePinning.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>0</integer>
+		</dict>
+		<key>HMCertificatePinningDemo.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>927A0D1919BF278A00982737</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>927A0D3A19BF278A00982737</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>927A0D5B19BF299500982737</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>927A0D7719BF299600982737</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>

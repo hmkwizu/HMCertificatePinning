@@ -1,0 +1,638 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		927A0D1E19BF278A00982737 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 927A0D1D19BF278A00982737 /* Foundation.framework */; };
+		927A0D2019BF278A00982737 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 927A0D1F19BF278A00982737 /* CoreGraphics.framework */; };
+		927A0D2219BF278A00982737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 927A0D2119BF278A00982737 /* UIKit.framework */; };
+		927A0D2819BF278A00982737 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 927A0D2619BF278A00982737 /* InfoPlist.strings */; };
+		927A0D2A19BF278A00982737 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 927A0D2919BF278A00982737 /* main.m */; };
+		927A0D2E19BF278A00982737 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 927A0D2D19BF278A00982737 /* AppDelegate.m */; };
+		927A0D3119BF278A00982737 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 927A0D2F19BF278A00982737 /* Main.storyboard */; };
+		927A0D3419BF278A00982737 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 927A0D3319BF278A00982737 /* ViewController.m */; };
+		927A0D3619BF278A00982737 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 927A0D3519BF278A00982737 /* Images.xcassets */; };
+		927A0D3D19BF278A00982737 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 927A0D3C19BF278A00982737 /* XCTest.framework */; };
+		927A0D3E19BF278B00982737 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 927A0D1D19BF278A00982737 /* Foundation.framework */; };
+		927A0D3F19BF278B00982737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 927A0D2119BF278A00982737 /* UIKit.framework */; };
+		927A0D4719BF278B00982737 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 927A0D4519BF278B00982737 /* InfoPlist.strings */; };
+		927A0D4919BF278B00982737 /* HMCertificatePinningTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 927A0D4819BF278B00982737 /* HMCertificatePinningTests.m */; };
+		927A0D5519BF27DC00982737 /* HMCertificatePinning.m in Sources */ = {isa = PBXBuildFile; fileRef = 927A0D5419BF27DC00982737 /* HMCertificatePinning.m */; };
+		927A0D5719BF28AE00982737 /* google.cer in Resources */ = {isa = PBXBuildFile; fileRef = 927A0D5619BF28AE00982737 /* google.cer */; };
+		927A0D5D19BF299500982737 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 927A0D1D19BF278A00982737 /* Foundation.framework */; };
+		927A0D5E19BF299500982737 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 927A0D1F19BF278A00982737 /* CoreGraphics.framework */; };
+		927A0D5F19BF299500982737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 927A0D2119BF278A00982737 /* UIKit.framework */; };
+		927A0D6519BF299600982737 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 927A0D6319BF299600982737 /* InfoPlist.strings */; };
+		927A0D6719BF299600982737 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 927A0D6619BF299600982737 /* main.m */; };
+		927A0D6B19BF299600982737 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 927A0D6A19BF299600982737 /* AppDelegate.m */; };
+		927A0D6E19BF299600982737 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 927A0D6C19BF299600982737 /* Main.storyboard */; };
+		927A0D7119BF299600982737 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 927A0D7019BF299600982737 /* ViewController.m */; };
+		927A0D7319BF299600982737 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 927A0D7219BF299600982737 /* Images.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		927A0D4019BF278B00982737 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 927A0D1219BF278A00982737 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 927A0D1919BF278A00982737;
+			remoteInfo = HMCertificatePinning;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		927A0D1A19BF278A00982737 /* HMCertificatePinning.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HMCertificatePinning.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		927A0D1D19BF278A00982737 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		927A0D1F19BF278A00982737 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		927A0D2119BF278A00982737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		927A0D2519BF278A00982737 /* HMCertificatePinning-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HMCertificatePinning-Info.plist"; sourceTree = "<group>"; };
+		927A0D2719BF278A00982737 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		927A0D2919BF278A00982737 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		927A0D2B19BF278A00982737 /* HMCertificatePinning-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HMCertificatePinning-Prefix.pch"; sourceTree = "<group>"; };
+		927A0D2C19BF278A00982737 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		927A0D2D19BF278A00982737 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		927A0D3019BF278A00982737 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		927A0D3219BF278A00982737 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		927A0D3319BF278A00982737 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		927A0D3519BF278A00982737 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		927A0D3B19BF278A00982737 /* HMCertificatePinningTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HMCertificatePinningTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		927A0D3C19BF278A00982737 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		927A0D4419BF278B00982737 /* HMCertificatePinningTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HMCertificatePinningTests-Info.plist"; sourceTree = "<group>"; };
+		927A0D4619BF278B00982737 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		927A0D4819BF278B00982737 /* HMCertificatePinningTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HMCertificatePinningTests.m; sourceTree = "<group>"; };
+		927A0D5319BF27DC00982737 /* HMCertificatePinning.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMCertificatePinning.h; sourceTree = "<group>"; };
+		927A0D5419BF27DC00982737 /* HMCertificatePinning.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMCertificatePinning.m; sourceTree = "<group>"; };
+		927A0D5619BF28AE00982737 /* google.cer */ = {isa = PBXFileReference; lastKnownFileType = file; path = google.cer; sourceTree = "<group>"; };
+		927A0D5C19BF299500982737 /* HMCertificatePinningDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HMCertificatePinningDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		927A0D6219BF299600982737 /* HMCertificatePinningDemo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HMCertificatePinningDemo-Info.plist"; sourceTree = "<group>"; };
+		927A0D6419BF299600982737 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		927A0D6619BF299600982737 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		927A0D6819BF299600982737 /* HMCertificatePinningDemo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HMCertificatePinningDemo-Prefix.pch"; sourceTree = "<group>"; };
+		927A0D6919BF299600982737 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		927A0D6A19BF299600982737 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		927A0D6D19BF299600982737 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		927A0D6F19BF299600982737 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		927A0D7019BF299600982737 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		927A0D7219BF299600982737 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		927A0D1719BF278A00982737 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				927A0D2019BF278A00982737 /* CoreGraphics.framework in Frameworks */,
+				927A0D2219BF278A00982737 /* UIKit.framework in Frameworks */,
+				927A0D1E19BF278A00982737 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		927A0D3819BF278A00982737 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				927A0D3D19BF278A00982737 /* XCTest.framework in Frameworks */,
+				927A0D3F19BF278B00982737 /* UIKit.framework in Frameworks */,
+				927A0D3E19BF278B00982737 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		927A0D5919BF299500982737 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				927A0D5E19BF299500982737 /* CoreGraphics.framework in Frameworks */,
+				927A0D5F19BF299500982737 /* UIKit.framework in Frameworks */,
+				927A0D5D19BF299500982737 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		927A0D1119BF278A00982737 = {
+			isa = PBXGroup;
+			children = (
+				927A0D2319BF278A00982737 /* HMCertificatePinning */,
+				927A0D4219BF278B00982737 /* HMCertificatePinningTests */,
+				927A0D6019BF299500982737 /* HMCertificatePinningDemo */,
+				927A0D1C19BF278A00982737 /* Frameworks */,
+				927A0D1B19BF278A00982737 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		927A0D1B19BF278A00982737 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				927A0D1A19BF278A00982737 /* HMCertificatePinning.app */,
+				927A0D3B19BF278A00982737 /* HMCertificatePinningTests.xctest */,
+				927A0D5C19BF299500982737 /* HMCertificatePinningDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		927A0D1C19BF278A00982737 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				927A0D1D19BF278A00982737 /* Foundation.framework */,
+				927A0D1F19BF278A00982737 /* CoreGraphics.framework */,
+				927A0D2119BF278A00982737 /* UIKit.framework */,
+				927A0D3C19BF278A00982737 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		927A0D2319BF278A00982737 /* HMCertificatePinning */ = {
+			isa = PBXGroup;
+			children = (
+				927A0D5219BF27DC00982737 /* Classes */,
+				927A0D2C19BF278A00982737 /* AppDelegate.h */,
+				927A0D2D19BF278A00982737 /* AppDelegate.m */,
+				927A0D2F19BF278A00982737 /* Main.storyboard */,
+				927A0D3219BF278A00982737 /* ViewController.h */,
+				927A0D3319BF278A00982737 /* ViewController.m */,
+				927A0D3519BF278A00982737 /* Images.xcassets */,
+				927A0D2419BF278A00982737 /* Supporting Files */,
+			);
+			path = HMCertificatePinning;
+			sourceTree = "<group>";
+		};
+		927A0D2419BF278A00982737 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				927A0D2519BF278A00982737 /* HMCertificatePinning-Info.plist */,
+				927A0D2619BF278A00982737 /* InfoPlist.strings */,
+				927A0D2919BF278A00982737 /* main.m */,
+				927A0D2B19BF278A00982737 /* HMCertificatePinning-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		927A0D4219BF278B00982737 /* HMCertificatePinningTests */ = {
+			isa = PBXGroup;
+			children = (
+				927A0D5619BF28AE00982737 /* google.cer */,
+				927A0D4819BF278B00982737 /* HMCertificatePinningTests.m */,
+				927A0D4319BF278B00982737 /* Supporting Files */,
+			);
+			path = HMCertificatePinningTests;
+			sourceTree = "<group>";
+		};
+		927A0D4319BF278B00982737 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				927A0D4419BF278B00982737 /* HMCertificatePinningTests-Info.plist */,
+				927A0D4519BF278B00982737 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		927A0D5219BF27DC00982737 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				927A0D5319BF27DC00982737 /* HMCertificatePinning.h */,
+				927A0D5419BF27DC00982737 /* HMCertificatePinning.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		927A0D6019BF299500982737 /* HMCertificatePinningDemo */ = {
+			isa = PBXGroup;
+			children = (
+				927A0D6919BF299600982737 /* AppDelegate.h */,
+				927A0D6A19BF299600982737 /* AppDelegate.m */,
+				927A0D6C19BF299600982737 /* Main.storyboard */,
+				927A0D6F19BF299600982737 /* ViewController.h */,
+				927A0D7019BF299600982737 /* ViewController.m */,
+				927A0D7219BF299600982737 /* Images.xcassets */,
+				927A0D6119BF299600982737 /* Supporting Files */,
+			);
+			path = HMCertificatePinningDemo;
+			sourceTree = "<group>";
+		};
+		927A0D6119BF299600982737 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				927A0D6219BF299600982737 /* HMCertificatePinningDemo-Info.plist */,
+				927A0D6319BF299600982737 /* InfoPlist.strings */,
+				927A0D6619BF299600982737 /* main.m */,
+				927A0D6819BF299600982737 /* HMCertificatePinningDemo-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		927A0D1919BF278A00982737 /* HMCertificatePinning */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 927A0D4C19BF278B00982737 /* Build configuration list for PBXNativeTarget "HMCertificatePinning" */;
+			buildPhases = (
+				927A0D1619BF278A00982737 /* Sources */,
+				927A0D1719BF278A00982737 /* Frameworks */,
+				927A0D1819BF278A00982737 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HMCertificatePinning;
+			productName = HMCertificatePinning;
+			productReference = 927A0D1A19BF278A00982737 /* HMCertificatePinning.app */;
+			productType = "com.apple.product-type.application";
+		};
+		927A0D3A19BF278A00982737 /* HMCertificatePinningTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 927A0D4F19BF278B00982737 /* Build configuration list for PBXNativeTarget "HMCertificatePinningTests" */;
+			buildPhases = (
+				927A0D3719BF278A00982737 /* Sources */,
+				927A0D3819BF278A00982737 /* Frameworks */,
+				927A0D3919BF278A00982737 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				927A0D4119BF278B00982737 /* PBXTargetDependency */,
+			);
+			name = HMCertificatePinningTests;
+			productName = HMCertificatePinningTests;
+			productReference = 927A0D3B19BF278A00982737 /* HMCertificatePinningTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		927A0D5B19BF299500982737 /* HMCertificatePinningDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 927A0D8619BF299600982737 /* Build configuration list for PBXNativeTarget "HMCertificatePinningDemo" */;
+			buildPhases = (
+				927A0D5819BF299500982737 /* Sources */,
+				927A0D5919BF299500982737 /* Frameworks */,
+				927A0D5A19BF299500982737 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HMCertificatePinningDemo;
+			productName = HMCertificatePinningDemo;
+			productReference = 927A0D5C19BF299500982737 /* HMCertificatePinningDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		927A0D1219BF278A00982737 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Oran Teknoloji";
+				TargetAttributes = {
+					927A0D3A19BF278A00982737 = {
+						TestTargetID = 927A0D1919BF278A00982737;
+					};
+				};
+			};
+			buildConfigurationList = 927A0D1519BF278A00982737 /* Build configuration list for PBXProject "HMCertificatePinning" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 927A0D1119BF278A00982737;
+			productRefGroup = 927A0D1B19BF278A00982737 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				927A0D1919BF278A00982737 /* HMCertificatePinning */,
+				927A0D3A19BF278A00982737 /* HMCertificatePinningTests */,
+				927A0D5B19BF299500982737 /* HMCertificatePinningDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		927A0D1819BF278A00982737 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				927A0D3619BF278A00982737 /* Images.xcassets in Resources */,
+				927A0D2819BF278A00982737 /* InfoPlist.strings in Resources */,
+				927A0D3119BF278A00982737 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		927A0D3919BF278A00982737 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				927A0D4719BF278B00982737 /* InfoPlist.strings in Resources */,
+				927A0D5719BF28AE00982737 /* google.cer in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		927A0D5A19BF299500982737 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				927A0D7319BF299600982737 /* Images.xcassets in Resources */,
+				927A0D6519BF299600982737 /* InfoPlist.strings in Resources */,
+				927A0D6E19BF299600982737 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		927A0D1619BF278A00982737 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				927A0D5519BF27DC00982737 /* HMCertificatePinning.m in Sources */,
+				927A0D3419BF278A00982737 /* ViewController.m in Sources */,
+				927A0D2E19BF278A00982737 /* AppDelegate.m in Sources */,
+				927A0D2A19BF278A00982737 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		927A0D3719BF278A00982737 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				927A0D4919BF278B00982737 /* HMCertificatePinningTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		927A0D5819BF299500982737 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				927A0D7119BF299600982737 /* ViewController.m in Sources */,
+				927A0D6B19BF299600982737 /* AppDelegate.m in Sources */,
+				927A0D6719BF299600982737 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		927A0D4119BF278B00982737 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 927A0D1919BF278A00982737 /* HMCertificatePinning */;
+			targetProxy = 927A0D4019BF278B00982737 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		927A0D2619BF278A00982737 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				927A0D2719BF278A00982737 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		927A0D2F19BF278A00982737 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				927A0D3019BF278A00982737 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		927A0D4519BF278B00982737 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				927A0D4619BF278B00982737 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		927A0D6319BF299600982737 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				927A0D6419BF299600982737 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		927A0D6C19BF299600982737 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				927A0D6D19BF299600982737 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		927A0D4A19BF278B00982737 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		927A0D4B19BF278B00982737 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		927A0D4D19BF278B00982737 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "HMCertificatePinning/HMCertificatePinning-Prefix.pch";
+				INFOPLIST_FILE = "HMCertificatePinning/HMCertificatePinning-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		927A0D4E19BF278B00982737 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "HMCertificatePinning/HMCertificatePinning-Prefix.pch";
+				INFOPLIST_FILE = "HMCertificatePinning/HMCertificatePinning-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		927A0D5019BF278B00982737 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/HMCertificatePinning.app/HMCertificatePinning";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "HMCertificatePinning/HMCertificatePinning-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "HMCertificatePinningTests/HMCertificatePinningTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		927A0D5119BF278B00982737 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/HMCertificatePinning.app/HMCertificatePinning";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "HMCertificatePinning/HMCertificatePinning-Prefix.pch";
+				INFOPLIST_FILE = "HMCertificatePinningTests/HMCertificatePinningTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+		927A0D8719BF299600982737 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "HMCertificatePinningDemo/HMCertificatePinningDemo-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "HMCertificatePinningDemo/HMCertificatePinningDemo-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		927A0D8819BF299600982737 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "HMCertificatePinningDemo/HMCertificatePinningDemo-Prefix.pch";
+				INFOPLIST_FILE = "HMCertificatePinningDemo/HMCertificatePinningDemo-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		927A0D1519BF278A00982737 /* Build configuration list for PBXProject "HMCertificatePinning" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				927A0D4A19BF278B00982737 /* Debug */,
+				927A0D4B19BF278B00982737 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		927A0D4C19BF278B00982737 /* Build configuration list for PBXNativeTarget "HMCertificatePinning" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				927A0D4D19BF278B00982737 /* Debug */,
+				927A0D4E19BF278B00982737 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		927A0D4F19BF278B00982737 /* Build configuration list for PBXNativeTarget "HMCertificatePinningTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				927A0D5019BF278B00982737 /* Debug */,
+				927A0D5119BF278B00982737 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		927A0D8619BF299600982737 /* Build configuration list for PBXNativeTarget "HMCertificatePinningDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				927A0D8719BF299600982737 /* Debug */,
+				927A0D8819BF299600982737 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 927A0D1219BF278A00982737 /* Project object */;
+}

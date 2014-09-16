@@ -13,12 +13,23 @@
 
 + (NSString*)sha1FingerprintForCertificate:(SecCertificateRef)certificate;
 + (NSString*)md5FingerprintForCertificate:(SecCertificateRef)certificate;
-+ (SecKeyRef) publicKeyForCertificate:(SecCertificateRef) certificate;
 
-//utils
+//returns brigded SecKeyRef
++ (id) publicKeyForCertificate:(SecCertificateRef) certificate;
+
+//utils SecCertificateRef+SecTrustRef
 + (SecCertificateRef)certForTrust:(SecTrustRef)trust;
 + (NSData *)dataForCertificate:(SecCertificateRef)certificate;
 + (SecCertificateRef)certForData:(NSData *)data;
+
+//Self signed certs---------
++ (BOOL)shouldTrustSecTrust:(SecTrustRef)trust localCertPath:(NSString *) certPath;
+
+/* useful with NSURLConnection*/
++ (BOOL)shouldTrustProtectionSpace:(NSURLProtectionSpace *)protectionSpace localCertPath:(NSString *) certPath;
+
+/* useful with NSURLSession*/
++ (BOOL)shouldTrustAuthenticationChallenge:(NSURLAuthenticationChallenge *)challenge localCertPath:(NSString *) certPath;
 
 
 @end

@@ -64,8 +64,8 @@
     return [fingerprint stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]];
 }
 
-+ (SecKeyRef) publicKeyForCertificate:(SecCertificateRef) allowedCertificate{
-    NSCParameterAssert(allowedCertificate);
++ (id) publicKeyForCertificate:(SecCertificateRef) allowedCertificate{
+    NSParameterAssert(allowedCertificate);
     
     SecCertificateRef allowedCertificates[] = {allowedCertificate};
     CFArrayRef tempCertificates = CFArrayCreate(NULL, (const void **)allowedCertificates, 1, NULL);
@@ -90,6 +90,10 @@
             
         case kSecTrustResultUnspecified:
             
+            allowedPublicKey = SecTrustCopyPublicKey(allowedTrust);
+            
+            break;
+            
         case kSecTrustResultFatalTrustFailure:
             
         case kSecTrustResultOtherError:
@@ -97,7 +101,6 @@
             break;
             
         case kSecTrustResultRecoverableTrustFailure:
-            
             allowedPublicKey = SecTrustCopyPublicKey(allowedTrust);
             
             break;
@@ -105,23 +108,51 @@
         case kSecTrustResultProceed:
             
             allowedPublicKey = SecTrustCopyPublicKey(allowedTrust);
-            
             break;
             
     }
     
-    
-    
-    
-    //SecKeyRef allowedPublicKey = SecTrustCopyPublicKey(allowedTrust);
-    
+
     CFRelease(allowedTrust);
     CFRelease(policy);
     CFRelease(tempCertificates);
-    CFRelease(allowedCertificate);
 
-    return allowedPublicKey;
+    
+    return (__bridge_transfer id)allowedPublicKey;
 }
 
+#pragma mark
+#pragma mark Self signed
++ (BOOL)shouldTrustSecTrust:(SecTrustRef)serverTrust localCertPath:(NSString *) certPath{
+    // Load up the bundled certificate.
+    NSData *certData = [[NSData alloc] initWithContentsOfFile:certPath];
+    CFDataRef certDataRef = (__bridge_retained CFDataRef)certData;
+    SecCertificateRef cert = SecCertificateCreateWithData(NULL, certDataRef);
+    
+    // Establish a chain of trust anchored on our bundled certificate.
+    CFArrayRef certArrayRef = CFArrayCreate(NULL, (void *)&cert, 1, NULL);
+    SecTrustSetAnchorCertificates(serverTrust, certArrayRef);
+    SecTrustSetAnchorCertificatesOnly(serverTrust, NO);//enable built-in anchor certs
+    
+    
+    // Verify that trust.
+    SecTrustResultType trustResult;
+    SecTrustEvaluate(serverTrust, &trustResult);
+    
+    // Clean up.
+    CFRelease(certArrayRef);
+    CFRelease(cert);
+    CFRelease(certDataRef);
+    
+    // Did our custom trust chain evaluate successfully?
+    return trustResult == kSecTrustResultUnspecified;
+}
+
++ (BOOL)shouldTrustProtectionSpace:(NSURLProtectionSpace *)protectionSpace localCertPath:(NSString *) certPath{
+    return [HMCertificatePinning shouldTrustSecTrust:protectionSpace.serverTrust localCertPath:certPath];
+}
++ (BOOL)shouldTrustAuthenticationChallenge:(NSURLAuthenticationChallenge *)challenge localCertPath:(NSString *) certPath{
+    return [HMCertificatePinning shouldTrustProtectionSpace:challenge.protectionSpace localCertPath:certPath];
+}
 
 @end

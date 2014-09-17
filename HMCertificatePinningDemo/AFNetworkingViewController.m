@@ -22,17 +22,33 @@
     
     
     NSString *url = @"https://facebook.com";
-
-    AFHTTPRequestOperation *operation = [[AFHTTPRequestOperation alloc] initWithRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:url]]];
-    operation.securityPolicy = [self getSecurityPolicy];
-    [operation setCompletionBlockWithSuccess:^(AFHTTPRequestOperation *operation, id responseObject) {
-
+    
+    
+    //Use manager
+    AFHTTPRequestOperationManager *mananger = [AFHTTPRequestOperationManager manager];
+    mananger.securityPolicy = [self getSecurityPolicy];
+    mananger.responseSerializer = [AFHTTPResponseSerializer serializer];
+    [mananger GET:url parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
+        
         [self.webView loadHTMLString:operation.responseString baseURL:nil];
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
         NSLog(@"Error:%@",error.localizedDescription);
     }];
     
-    [operation start];
+    
+    
+
+    //Or Operation
+//    AFHTTPRequestOperation *operation = [[AFHTTPRequestOperation alloc] initWithRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:url]]];
+//    operation.securityPolicy = [self getSecurityPolicy];
+//    [operation setCompletionBlockWithSuccess:^(AFHTTPRequestOperation *operation, id responseObject) {
+//
+//        [self.webView loadHTMLString:operation.responseString baseURL:nil];
+//    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+//        NSLog(@"Error:%@",error.localizedDescription);
+//    }];
+//    
+//    [operation start];
     
 }
 
@@ -57,6 +73,7 @@
     
     
 }
+
 
 
 @end

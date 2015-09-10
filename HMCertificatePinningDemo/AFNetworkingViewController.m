@@ -69,6 +69,10 @@
     [securityPolicy setValidatesCertificateChain:NO];
     /**** SSL Pinning ****/
     
+//    //if using a self signed certificate
+//    [securityPolicy setAllowInvalidCertificates:YES];
+//    [securityPolicy setValidatesDomainName:NO];
+    
     return securityPolicy;
     
     

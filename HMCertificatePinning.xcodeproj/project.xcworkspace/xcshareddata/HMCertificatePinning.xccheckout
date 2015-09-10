@@ -14,7 +14,7 @@
 		<string>https://github.com/hmkwizu/HMCertificatePinning.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>HMCertificatePinning.xcodeproj/project.xcworkspace</string>
+	<string>HMCertificatePinning.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>4B95675011BD4E2B0D8B74B221447459AB010D50</key>
